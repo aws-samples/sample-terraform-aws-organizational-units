@@ -6,5 +6,5 @@ module "ou_1" {
   source     = "./modules/ou1"
   ou         = each.key
   child_ous  = each.value
-  root_ou_id = var.root_ou
+  root_ou_id = var.root_ou_id
 }
