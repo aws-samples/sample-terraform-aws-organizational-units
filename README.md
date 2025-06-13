@@ -6,7 +6,7 @@ Deploy Organizational Units (OUs) with Terraform.
 
 ```hcl
 module "ou" {
-  source               = "github.com/aws-samples/terraform-aws-organizational-units"
+  source               = "github.com/aws-samples/sample-terraform-aws-organizational-units"
   root_ou_id           = data.aws_organizations_organization.org.roots[0].id
   organizational_units = {
    "Workloads" = {
